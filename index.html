@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio Funciones</title>
+  </head>
+
+  <body>
+    <div class="turno-display">
+      <h1 class="numero-turno" id="numero-turno">01</h1>
+      <p class="texto-turno">Por favor, acérquese al mostrador</p>
+      <div class="contenedorBtns">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+        <button id="btnReiniciar">Reiniciar</button>
+      </div>
+      <div class="valorInicio">
+        <label for="textValorInicio"
+          >Si lo desea, puede ingresar un valor inicial:
+        </label>
+        <p>
+          <input type="number" id="inputValorInicio" value="0" />
+          <button id="btnCambiar">Cambiar</button>
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
