@@ -22,16 +22,16 @@ function mostrarDosCifrasDisplay(): void {
 
 if (btnSiguiente != null && btnSiguiente != undefined) {
   btnSiguiente.addEventListener("click", (): void => {
-    let valorNumeroTurno: number = (numeroTurnoInt += 1);
-    numeroTurno.textContent = valorNumeroTurno.toString();
+    numeroTurnoInt = numeroTurnoInt += 1;
+    numeroTurno.textContent = numeroTurnoInt.toString();
     mostrarDosCifrasDisplay();
   });
 }
 
 if (btnAnterior != null && btnAnterior != undefined) {
   btnAnterior.addEventListener("click", (): void => {
-    let valorNumeroTurno: number = (numeroTurnoInt -= 1);
-    numeroTurno.textContent = valorNumeroTurno.toString();
+    numeroTurnoInt = numeroTurnoInt -= 1;
+    numeroTurno.textContent = numeroTurnoInt.toString();
     mostrarDosCifrasDisplay();
   });
 }
@@ -48,8 +48,7 @@ if (btnCambiar != null && btnCambiar != undefined) {
   btnCambiar.addEventListener("click", () => {
     // Convertimos el contenido del valor del input de tipo string a Number
     numeroTurnoInt = parseInt(inputValorInicio.value);
-    let valorNumeroTurno: number = numeroTurnoInt;
-    numeroTurno.textContent = valorNumeroTurno.toString();
+    numeroTurno.textContent = numeroTurnoInt.toString();
     mostrarDosCifrasDisplay();
   });
 }
