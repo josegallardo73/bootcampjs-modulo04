@@ -48,7 +48,7 @@ if (btnCambiar != null && btnCambiar != undefined) {
   btnCambiar.addEventListener("click", () => {
     // Convertimos el contenido del valor del input de tipo string a Number
     numeroTurnoInt = parseInt(inputValorInicio.value);
-    let valorNumeroTurno = numeroTurnoInt;
+    let valorNumeroTurno: number = numeroTurnoInt;
     numeroTurno.textContent = valorNumeroTurno.toString();
     mostrarDosCifrasDisplay();
   });
